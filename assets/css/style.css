@@ -13,8 +13,13 @@
     --glow-shadow: rgba(0, 255, 0, 0.5) 0px 0px 38.664px 0px, rgba(0, 255, 0, 0.282) 0px 0px 55.992px 0px;
 }
 
+.glow-text {
+    text-shadow: 0 0 10px var(--glow-color), 0 0 20px var(--glow-color), 0 0 30px var(--glow-color);
+}
+
 .navbar {
     border-bottom: 1px solid var(--primary-color);
+    z-index: 999;
     padding: 25px 0;
 }
 
@@ -57,7 +62,12 @@
 
 .nav-link:hover {
     color: var(--primary-color);
-    border-bottom: 1px solid var(--primary-color);
+    border-bottom: 5px solid var(--primary-color);
+    text-shadow: 0 0 15px rgba(0, 255, 0, 0.4);
+}
+
+.nav-links a:hover, .nav-links a.active {
+    color: var(--primary-color);
 }
 
 .contact-btn {
@@ -107,7 +117,189 @@
     transition: all 0.2s linear;
 }
 
-.profile-img img:hover {
+.profile-img:hover img {
     cursor: pointer;
-    transform: scale(1.1);
+    transform: scale(1.05);
+}
+
+.abt-page h5{
+    color: var(--primary-color) !important;
+    padding-top: 35px;
+    font-weight: 400;
+}
+
+.abt-page h1{
+    font-size: 56px !important;
+}
+
+.abt-page h1 span{
+    color: var(--primary-color) !important;
+    font-size: 56px !important;
+}
+
+.abt-page h2 {
+    font-size: 60px !important;
+}
+
+.abt-page p{
+    font-size: 20px !important;
+}
+
+.btn-group{
+    margin-top: 30px;
+}
+
+.primary-btn {
+    background: var(--primary-color) !important;
+    color: var(--background-dark) !important;
+    border: none;
+}
+
+.primary-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 255, 0, 0.3);
+}
+
+.download-cv {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: transparent;
+    color: var(--text-color);
+    border: 2px solid var(--primary-color);
+    text-decoration: none;
+}
+
+.download-cv:hover {
+    background: var(--primary-color) !important;
+    color: var(--background-dark) !important;
+    transform: translateY(-2px) !important;
+    box-shadow: 0 5px 15px rgba(0, 255, 0, 0.2) !important;
+}
+
+.primary-btn, .download-cv {
+    padding: 12px 25px;
+    border-radius: 30px;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s linear;
+}
+
+.glow-button {
+    box-shadow: 0 0 10px var(--glow-color), 0 0 20px var(--glow-color);
+    transition: all 0.3s linear;
+}
+
+.hero-page{
+    padding: 50px 0 !important;
+}
+
+.my-badge i {
+    color: var(--background-light);
+    font-size: 23px;
+}
+
+.my-badge {
+    position: absolute;
+    bottom: 71px;
+    right: 86px;
+    width: 60px;
+    height: 60px;
+    background-color: var(--primary-color) !important;
+    border: 4px solid var(--background-dark);
+}
+
+.abt-service{
+    color: white !important;
+    text-align: center !important;
+    background: rgba(15, 15, 15, 0.95);
+    border: 1px solid rgba(0, 255, 0, 0.1);
+    padding: 40px 30px;
+    border-radius: 20px;
+    text-align: center;
+    height: 100%;
+    position: relative;
+    transition: all 0.4s linear;
+    margin-bottom: 30px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.abt-service:hover{
+    transform: translateY(-15px) scale(1.02);
+    box-shadow: 0 15px 30px rgba(0, 255, 0, 0.15);
+    border-color: rgba(0, 255, 0, 0.3);
+    cursor: pointer;
+}
+
+.service-icon{
+    width: 100px;
+    height: 100px;
+    margin: 0 auto 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    background: linear-gradient(45deg, rgba(0, 255, 0, 0.05), rgba(0, 255, 0, 0.1));
+    border-radius: 50%;
+    border: 2px solid rgba(0, 255, 0, 0.1);
+}
+
+.service-icon::before {
+    content: '';
+    position: absolute;
+    width: calc(100% + 20px);
+    height: calc(100% + 20px);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: radial-gradient(circle, rgba(0, 255, 0, 0.1), transparent 70%);
+    filter: blur(20px);
+    opacity: 0.15;
+    z-index: -1;
+    transition: all 0.4s linear;
+}
+
+.service-icon i{
+    color: var(--primary-color);
+    font-size: 45px !important;
+}
+
+.group-icon{
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.group-icon li{
+    display: flex;
+    align-items: center;
+    padding: 10px 15px;
+    background: rgba(0, 255, 0, 0.05);
+    border-radius: 12px;
+    transition: all 0.3s linear;
+    border: 1px solid rgba(0, 255, 0, 0.1);
+}
+
+.group-icon li:hover {
+    transform: translateX(5px);
+    background: rgba(0, 255, 0, 0.1);
+    border-color: rgba(0, 255, 0, 0.2);
+}
+
+.group-icon li i{
+    color: var(--primary-color);
+    margin-right: 12px;
+    font-size: 1rem !important;
+    background-color: var(--background-light) !important;
+    width: 25px;
+    height: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
 }

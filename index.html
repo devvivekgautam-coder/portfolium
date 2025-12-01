@@ -17,54 +17,167 @@
 </head>
 
 <body>
-    <nav class="navbar  navbar-expand-lg">
+    <nav class="navbar navbar-expand-lg position-sticky top-0">
         <div class="container justify--evenly d-flex align-content-center">
             <div>
                 <a class="navbar-brand" href="#">
                     Portfolium
                 </a>
             </div>
-                <ul class="navbar-nav justify-content-center mb-2 mb-lg-0 gap-3 fw-semibold">
-                    <li class="nav-item">
-                        <a class="nav-link active active-link" aria-current="page" href="#">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Service</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Project</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Contact</a>
-                    </li>
-                </ul>
+            <ul class="navbar-nav justify-content-center mb-2 mb-lg-0 gap-4 fw-semibold">
+                <li class="nav-item">
+                    <a class="nav-link active active-link" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Service</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Project</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contact</a>
+                </li>
+            </ul>
             <div>
-                <button class="contact-btn text-white">lets talk</button>
+                <button class="contact-btn text-white">Let's Talk</button>
             </div>
         </div>
     </nav>
 
-    <section>
-        <div class="container">
-            <div class="row">
+    <section class="hero-page">
+        <div class="container mt-5">
+            <div class="row gy-3">
                 <div class="col-6">
                     <div class="hero-sec">
-                        <div class="abt-page">
-
+                        <div class="abt-page text-white">
+                            <h5>"Hello There!"</h5>
+                            <h1 class="lh-base">
+                                I'm
+                                <span class="glow-text">
+                                    Vivek Gautam
+                                </span>
+                            </h1>
+                            <h2 class="lh-base">
+                                Product Designer based in IND.
+                            </h2>
+                            <p class="lh-base">
+                                A passionate Product Designer with an eye for detail and a drive for innovation.
+                            </p>
+                        </div>
+                        <div class="btn-group gap-4 justify-content-center align-items-center">
+                            <button class="primary-btn glow-button">Get in Touch</button>
+                            <button class="download-cv text-white">Download CV</button>
                         </div>
                     </div>
                 </div>
+
                 <div class="col-6">
                     <div class="hero-sec">
-                        <div class="profile-img">
+                        <div class="profile-img position-relative">
                             <img src="./assets/images/img-1.png" alt="Men">
 
-                            <div class="my-badge">
-
+                            <div class="my-badge rounded-circle align-items-center justify-content-center d-flex">
+                                <i class="fa-solid fa-check"></i>
                             </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="service-sec">
+        <div class="container">
+            <div class="row align-items-center justify-content-center">
+                <div class="col-4">
+                    <div class="service-page">
+                        <div class="abt-service">
+                            <div class="service-icon">
+                                <i class="fa-solid fa-desktop"></i>
+                            </div>
+                            <h3>
+                                Web Design
+                            </h3>
+                            <p>
+                                Creating beautiful, responsive websites that engage users and drive results.
+                            </p>
+                            <ul class="group-icon list-unstyled">
+                                <li class="">
+                                    <i class="fa-solid fa-check"></i>
+                                    Custom Designs
+                                </li>
+                                <li class="">
+                                    <i class="fa-solid fa-check"></i>
+                                    Responsive Layout
+                                </li>
+                                <li class="">
+                                    <i class="fa-solid fa-check"></i>
+                                    User Experience
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-4">
+                    <div class="service-page">
+                        <div class="abt-service">
+                            <div class="service-icon">
+                                <i class="fa-solid fa-mobile-screen-button"></i>
+                            </div>
+                            <h3>
+                                App Design
+                            </h3>
+                            <p>
+                                Crafting intuitive mobile applications that users love to interact with.
+                            </p>
+                            <ul class="group-icon list-unstyled">
+                                <li class="">
+                                    <i class="fa-solid fa-check"></i>
+                                    Native Apps
+                                </li>
+                                <li class="">
+                                    <i class="fa-solid fa-check"></i>
+                                    Cross-platform
+                                </li>
+                                <li class="">
+                                    <i class="fa-solid fa-check"></i>
+                                    User-friendly UI
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-4">
+                    <div class="service-page">
+                        <div class="abt-service">
+                            <div class="service-icon">
+                                <i class="fa-solid fa-chart-line"></i>
+                            </div>
+                            <h3>
+                                Dashboard Design
+                            </h3>
+                            <p>
+                                Building powerful analytics dashboards for data-driven decisions.
+                            </p>
+                            <ul class="group-icon list-unstyled">
+                                <li class="">
+                                    <i class="fa-solid fa-check"></i>
+                                    Real-time Data
+                                </li>
+                                <li class="">
+                                    <i class="fa-solid fa-check"></i>
+                                    Interactive Charts
+                                </li>
+                                <li class="">
+                                    <i class="fa-solid fa-check"></i>
+                                    Custom Reports
+                                </li>
+                            </ul>
                         </div>
                     </div>
                 </div>

@@ -13,6 +13,10 @@
     --glow-shadow: rgba(0, 255, 0, 0.5) 0px 0px 38.664px 0px, rgba(0, 255, 0, 0.282) 0px 0px 55.992px 0px;
 }
 
+img, i, button, span, p, a {
+    background-color: transparent !important;
+}
+
 .glow-text {
     text-shadow: 0 0 10px var(--glow-color), 0 0 20px var(--glow-color), 0 0 30px var(--glow-color);
 }
@@ -114,14 +118,14 @@
 }
 
 .profile-img img {
+    animation: shadowGlow 3.5s linear infinite;
     background-color: var(--background-light) !important;
     width: 100%;
     height: 100%;
-    animation: animation 3.5s linear infinite;
     object-fit: cover;
     border-radius: 50%;
-    /* box-shadow: var(--glow-shadow); */
     transition: all 0.2s linear;
+    box-shadow: var(--glow-shadow);
 }
 
 .profile-img:hover img {
@@ -271,6 +275,10 @@
     font-size: 45px !important;
 }
 
+.abt-service h3{
+    font-size: clamp(28px, 4.5vw, 40px) !important;
+}
+
 .group-icon{
     list-style: none;
     padding: 0;
@@ -345,11 +353,100 @@
     margin: 30px auto;
 }
 
-@keyframes animation{
-    0%{
-        box-shadow: transparent;
+@keyframes shadowGlow {
+    0% {
+        box-shadow: 0 0 10px rgba(0, 255, 0, 0.4),
+                    0 0 20px rgba(0, 255, 0, 0.2);
     }
-    30%{
-        box-shadow: var(--glow-shadow);
+    50% {
+        box-shadow: 0 0 25px rgba(0, 255, 0, 0.8),
+                    0 0 50px rgba(0, 255, 0, 0.5);
     }
+    100% {
+        box-shadow: 0 0 10px rgba(0, 255, 0, 0.4),
+                    0 0 20px rgba(0, 255, 0, 0.2);
+    }
+}
+
+.glow-effect {
+    box-shadow: 0 0 20px var(--glow-color), 0 0 40px rgba(0, 255, 0, 0.2);
+    animation: pulse 2s infinite;
+}
+
+.about-page{
+    padding: 70px 0;
+}
+
+.experience-badge {
+    position: absolute;
+    top: 25px;
+    right: 80px;
+    width: 150px;
+    height: 150px;
+    background: var(--primary-color) !important;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: var(--background-dark);
+    text-align: center;
+    z-index: 2;
+}
+
+.experience-badge .years {
+    font-size: 3rem;
+    font-weight: bold;
+    line-height: 1;
+    margin-bottom: 5px;
+}
+
+.experience-badge .text {
+    font-size: 0.9rem;
+    line-height: 1.2;
+}
+
+.abt-me{
+    color: var(--text-color);
+    line-height: 1.8;
+}
+
+.my-skill .progress {
+    background-color: var(--background-light) !important;
+    height: 8px;
+    border-radius: 20px;
+}
+
+.my-skill .progress-bar {
+    background-color: var(--primary-color) !important;
+    border-radius: 20px;
+}
+
+.skill-card{
+    margin-top: 55px;
+    padding: 30px 20px;
+    text-align: center;
+    background: var(--background-light) !important;
+    border-radius: 15px;
+    transition: all 0.3s linear;
+}
+
+.skill-card:hover{
+    transform: translateY(-5px);
+    box-shadow: var(--glow-shadow);
+    cursor: pointer;
+}
+
+.skill-card i, h3{
+    color: var(--primary-color);
+    background-color: transparent !important;
+    font-size: 2.5rem;
+}
+
+.skill-card span{
+    color: var(--text-color-muted);
+}
+
+.skill-title h3{
+    font-size: clamp(28px, 4.5vw, 40px) !important;
 }

@@ -57,17 +57,23 @@
 
 .nav-link {
     color: white;
-    transition: all 0.2s linear;
+    transition: all 0.4s linear;
 }
 
 .nav-link:hover {
     color: var(--primary-color);
-    border-bottom: 5px solid var(--primary-color);
+    border-bottom: 1px solid var(--primary-color);
     text-shadow: 0 0 15px rgba(0, 255, 0, 0.4);
 }
 
 .nav-links a:hover, .nav-links a.active {
     color: var(--primary-color);
+}
+
+.navbar-toggler {
+    background-color: var(--glow-shadow) !important;
+    color: var(--primary-color) !important;
+    border-color: var(--primary-color) !important;
 }
 
 .contact-btn {
@@ -129,16 +135,16 @@
 }
 
 .abt-page h1{
-    font-size: 56px !important;
+    font-size: clamp(28px, 4.5vw, 56px) !important;
 }
 
 .abt-page h1 span{
     color: var(--primary-color) !important;
-    font-size: 56px !important;
+    font-size: clamp(28px, 4.5vw, 56px) !important;
 }
 
 .abt-page h2 {
-    font-size: 60px !important;
+    font-size: clamp(30px, 5.5vw, 60px) !important;
 }
 
 .abt-page p{
@@ -178,7 +184,7 @@
 }
 
 .primary-btn, .download-cv {
-    padding: 12px 25px;
+    padding: clamp(8px, 2vw, 12px) clamp(15px, 3vw, 25px) !important;
     border-radius: 30px;
     font-size: 1rem;
     font-weight: 500;
@@ -192,7 +198,7 @@
 }
 
 .hero-page{
-    padding: 50px 0 !important;
+    padding: 70px 0 !important;
 }
 
 .my-badge i {
@@ -217,12 +223,10 @@
     border: 1px solid rgba(0, 255, 0, 0.1);
     padding: 40px 30px;
     border-radius: 20px;
-    text-align: center;
     height: 100%;
     position: relative;
     transition: all 0.4s linear;
-    margin-bottom: 30px;
-    overflow: hidden;
+    margin: 30px 0;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
 
@@ -302,4 +306,40 @@
     align-items: center;
     justify-content: center;
     border-radius: 50%;
+}
+
+.service-sec{
+    padding: 70px 0;
+}
+
+.sec-head span{
+    letter-spacing: 4px;
+    background: var(--glow-shadow) !important;
+    color: var(--primary-color);
+    padding: 8px 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 20px rgba(0, 255, 0, 0.1);
+    animation: floatEffect 3s ease-in-out infinite;
+    border: 1px solid rgba(0, 255, 0, 0.2);
+}
+
+.sec-head h2{
+    margin-bottom: 60px;
+    color: var(--primary-color);
+    font-size: clamp(28px, 4.5vw, 56px) !important;
+    font-weight: 800;
+    letter-spacing: 5px;
+    transition: all 0.2s linear;
+}
+
+.sec-head h2:hover{
+    transform:  scale(1.1) !important;
+    cursor: pointer;
+}
+
+.head-line{
+    width: 200px;
+    height: 3px;
+    background: linear-gradient(90deg, transparent 0%, var(--primary-color) 25%, var(--primary-color) 75%, transparent 100%);
+    margin: 30px auto;
 }

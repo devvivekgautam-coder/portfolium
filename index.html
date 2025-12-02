@@ -18,15 +18,19 @@
 
 <body>
     <nav class="navbar navbar-expand-lg position-sticky top-0">
-        <div class="container justify--evenly d-flex align-content-center">
-            <div>
-                <a class="navbar-brand" href="#">
-                    Portfolium
-                </a>
-            </div>
-            <ul class="navbar-nav justify-content-center mb-2 mb-lg-0 gap-4 fw-semibold">
+    <div class="container d-flex justify-content-evenly align-items-center">
+        <a class="navbar-brand" href="./index.html" target="_blank">
+            Portfolium
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mx-auto mb-2 mb-lg-0 gap-4 fw-semibold">
                 <li class="nav-item">
-                    <a class="nav-link active active-link" aria-current="page" href="#">Home</a>
+                    <a class="nav-link active active-link" href="#">Home</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">Service</a>
@@ -41,16 +45,16 @@
                     <a class="nav-link" href="#">Contact</a>
                 </li>
             </ul>
-            <div>
-                <button class="contact-btn text-white">Let's Talk</button>
-            </div>
+            <button class="contact-btn text-white">Let's Talk</button>
         </div>
-    </nav>
+    </div>
+</nav>
+
 
     <section class="hero-page">
         <div class="container mt-5">
-            <div class="row gy-3">
-                <div class="col-6">
+            <div class="row gy-5">
+                <div class="col-lg-6">
                     <div class="hero-sec">
                         <div class="abt-page text-white">
                             <h5>"Hello There!"</h5>
@@ -69,12 +73,15 @@
                         </div>
                         <div class="btn-group gap-4 justify-content-center align-items-center">
                             <button class="primary-btn glow-button">Get in Touch</button>
-                            <button class="download-cv text-white">Download CV</button>
+                            <button class="download-cv text-white">
+                                Download CV
+                                <i class="fa-solid fa-download"></i>
+                            </button>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-6">
+                <div class="col-lg-6">
                     <div class="hero-sec">
                         <div class="profile-img position-relative">
                             <img src="./assets/images/img-1.png" alt="Men">
@@ -91,8 +98,17 @@
 
     <section class="service-sec">
         <div class="container">
+            <div class="sec-head text-center text-uppercase glow-text position-relative">
+                <span class="rounded-pill d-inline-block">
+                    My Expertise
+                </span>
+                <h2 class="">
+                    Services I Offer
+                </h2>
+                <div class="head-line "></div>
+            </div>
             <div class="row align-items-center justify-content-center">
-                <div class="col-4">
+                <div class="col-lg-4">
                     <div class="service-page">
                         <div class="abt-service">
                             <div class="service-icon">
@@ -122,7 +138,7 @@
                     </div>
                 </div>
 
-                <div class="col-4">
+                <div class="col-lg-4">
                     <div class="service-page">
                         <div class="abt-service">
                             <div class="service-icon">
@@ -152,7 +168,7 @@
                     </div>
                 </div>
 
-                <div class="col-4">
+                <div class="col-lg-4">
                     <div class="service-page">
                         <div class="abt-service">
                             <div class="service-icon">

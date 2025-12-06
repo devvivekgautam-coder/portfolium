@@ -1,8 +1,8 @@
-* {
-    background-color: #0a0a0a !important;
+body {
+  background-color: #0a0a0a;
 }
 
-section{
+section {
     padding: 100px 0 !important;
 }
 
@@ -17,16 +17,13 @@ section{
     --glow-shadow: rgba(0, 255, 0, 0.5) 0px 0px 38.664px 0px, rgba(0, 255, 0, 0.282) 0px 0px 55.992px 0px;
 }
 
-img, i, button, span, p, a {
-    background-color: transparent !important;
-}
-
 .glow-text {
     text-shadow: 0 0 10px var(--glow-color), 0 0 20px var(--glow-color), 0 0 30px var(--glow-color);
 }
 
 .navbar {
     border-bottom: 1px solid var(--primary-color);
+    background-color: var(--background-light);
     z-index: 999;
     padding: 25px 0;
 }
@@ -74,7 +71,8 @@ img, i, button, span, p, a {
     text-shadow: 0 0 15px rgba(0, 255, 0, 0.4);
 }
 
-.nav-links a:hover, .nav-links a.active {
+.nav-links a:hover,
+.nav-links a.active {
     color: var(--primary-color);
 }
 
@@ -137,17 +135,17 @@ img, i, button, span, p, a {
     transform: scale(1.05);
 }
 
-.abt-page h5{
+.abt-page h5 {
     color: var(--primary-color) !important;
     padding-top: 35px;
     font-weight: 400;
 }
 
-.abt-page h1{
+.abt-page h1 {
     font-size: clamp(28px, 4.5vw, 56px) !important;
 }
 
-.abt-page h1 span{
+.abt-page h1 span {
     color: var(--primary-color) !important;
     font-size: clamp(28px, 4.5vw, 56px) !important;
 }
@@ -156,11 +154,12 @@ img, i, button, span, p, a {
     font-size: clamp(30px, 5.5vw, 60px) !important;
 }
 
-.abt-page p{
+.abt-page p {
     font-size: 20px !important;
+    text-align: left !important;
 }
 
-.btn-group{
+.btn-group {
     margin-top: 30px;
 }
 
@@ -192,7 +191,8 @@ img, i, button, span, p, a {
     box-shadow: 0 5px 15px rgba(0, 255, 0, 0.2) !important;
 }
 
-.primary-btn, .download-cv {
+.primary-btn,
+.download-cv {
     padding: clamp(8px, 2vw, 12px) clamp(15px, 3vw, 25px) !important;
     border-radius: 30px;
     font-size: 1rem;
@@ -221,7 +221,7 @@ img, i, button, span, p, a {
     border: 4px solid var(--background-dark);
 }
 
-.abt-service{
+.abt-service {
     color: white !important;
     text-align: center !important;
     background: rgba(15, 15, 15, 0.95);
@@ -235,14 +235,14 @@ img, i, button, span, p, a {
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
 
-.abt-service:hover{
+.abt-service:hover {
     transform: translateY(-15px) scale(1.02);
     box-shadow: 0 15px 30px rgba(0, 255, 0, 0.15);
     border-color: rgba(0, 255, 0, 0.3);
     cursor: pointer;
 }
 
-.service-icon{
+.service-icon {
     width: 100px;
     height: 100px;
     margin: 0 auto 30px;
@@ -270,16 +270,16 @@ img, i, button, span, p, a {
     transition: all 0.4s linear;
 }
 
-.service-icon i{
+.service-icon i {
     color: var(--primary-color);
     font-size: 45px !important;
 }
 
-.abt-service h3{
+.abt-service h3 {
     font-size: clamp(28px, 4.5vw, 40px) !important;
 }
 
-.group-icon{
+.group-icon {
     list-style: none;
     padding: 0;
     margin: 20px 0;
@@ -288,7 +288,7 @@ img, i, button, span, p, a {
     gap: 15px;
 }
 
-.group-icon li{
+.group-icon li {
     display: flex;
     align-items: center;
     padding: 10px 15px;
@@ -304,7 +304,7 @@ img, i, button, span, p, a {
     border-color: rgba(0, 255, 0, 0.2);
 }
 
-.group-icon li i{
+.group-icon li i {
     color: var(--primary-color);
     margin-right: 12px;
     font-size: 1rem !important;
@@ -317,7 +317,7 @@ img, i, button, span, p, a {
     border-radius: 50%;
 }
 
-.sec-head span{
+.sec-head span {
     letter-spacing: 4px;
     background: var(--glow-shadow) !important;
     color: var(--primary-color);
@@ -328,7 +328,7 @@ img, i, button, span, p, a {
     border: 1px solid rgba(0, 255, 0, 0.2);
 }
 
-.sec-head h2{
+.sec-head h2 {
     margin-bottom: 60px;
     color: var(--primary-color);
     font-size: clamp(28px, 4.5vw, 56px) !important;
@@ -337,12 +337,12 @@ img, i, button, span, p, a {
     transition: all 0.2s linear;
 }
 
-.sec-head h2:hover{
-    transform:  scale(1.1) !important;
+.sec-head h2:hover {
+    transform: scale(1.1) !important;
     cursor: pointer;
 }
 
-.head-line{
+.head-line {
     width: 200px;
     height: 3px;
     background: linear-gradient(90deg, transparent 0%, var(--primary-color) 25%, var(--primary-color) 75%, transparent 100%);
@@ -352,15 +352,17 @@ img, i, button, span, p, a {
 @keyframes shadowGlow {
     0% {
         box-shadow: 0 0 10px rgba(0, 255, 0, 0.4),
-                    0 0 20px rgba(0, 255, 0, 0.2);
+            0 0 20px rgba(0, 255, 0, 0.2);
     }
+
     50% {
         box-shadow: 0 0 25px rgba(0, 255, 0, 0.8),
-                    0 0 50px rgba(0, 255, 0, 0.5);
+            0 0 50px rgba(0, 255, 0, 0.5);
     }
+
     100% {
         box-shadow: 0 0 10px rgba(0, 255, 0, 0.4),
-                    0 0 20px rgba(0, 255, 0, 0.2);
+            0 0 20px rgba(0, 255, 0, 0.2);
     }
 }
 
@@ -398,7 +400,7 @@ img, i, button, span, p, a {
     line-height: 1.2;
 }
 
-.abt-me{
+.abt-me {
     color: var(--text-color);
     line-height: 1.8;
 }
@@ -414,7 +416,7 @@ img, i, button, span, p, a {
     border-radius: 20px;
 }
 
-.skill-card{
+.skill-card {
     margin-top: 55px;
     padding: 30px 20px;
     text-align: center;
@@ -423,65 +425,141 @@ img, i, button, span, p, a {
     transition: all 0.3s linear;
 }
 
-.skill-card:hover{
+.skill-card:hover {
     transform: translateY(-5px);
     box-shadow: var(--glow-shadow);
     cursor: pointer;
 }
 
-.skill-card i, h3{
+.skill-card i,
+h3 {
     color: var(--primary-color);
     background-color: transparent !important;
     font-size: 2.5rem;
 }
 
-.skill-card span{
+.skill-card span {
     color: var(--text-color-muted);
 }
 
-.skill-title h3{
+.skill-title h3 {
     font-size: clamp(28px, 4.5vw, 40px) !important;
 }
 
-.project-card img{
+.project-card img {
     height: 100% !important;
+    border: 2px solid var(--text-color-muted) !important;
     transition: all 0.2s linear;
 }
 
-.project-card img:hover{
-    transform: translateY(-5px) !important;
+.project-card img:hover {
+    transform: scale(1.04) !important;
+    box-shadow: var(--glow-shadow) !important;
     cursor: pointer;
 }
 
-.project-page{
-    height: 100% !important;
+.project-info h3,
+p {
+    text-align: center !important;
 }
 
-.project-card{
-    position: relative;
-    height: 100% !important;
+.project-info h3 {
+    color: var(--primary-color) !important;
+    font-size: 25px !important;
+    margin-top: 20px !important;
 }
 
-.project-info{
-    position: absolute;
-    content: "";
-    bottom: 0;
-    left: 0;
+.project-info p {
+    color: var(--text-color) !important;
+}
+
+.client-card {
+    padding: 20px;
+    transition: all 0.3s linear;
+    width: 300px !important;
+    height: 300px !important;
+}
+
+.client-card img {
+    border: 1px solid var(--primary-color) !important;
+    transition: all 0.3s linear;
+}
+
+.swiper {
     width: 100%;
     height: 100%;
-    background-color:red !important;
-
 }
 
-.project-info h3{
-    color: white;
-    font-size: 25px !important;
+.swiper-slide {
+    text-align: center;
+    background:none !important;
+    background: rgba(26, 26, 26, 0.9) !important;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    padding: 50px !important;
+    border-radius: 25px;
+    border: 2px solid rgba(0, 255, 0, 0.1);
+    transition: all 0.2s linear;
 }
 
-.project-link i, p{
+.swiper-slide:hover{
+    transform: translateY(-5px);
+    border-color: var(--primary-color);
+    box-shadow: 0 10px 30px rgba(0, 255, 0, 0.1);
+    cursor: pointer;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.slide-img{
+    z-index: 1;
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+    margin: 0 auto 20px;
+    border-radius: 50% !important;
+    border: 3px solid var(--primary-color) !important;
+}
+
+.slide-img img {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.people-info{
+    display: block !important;
+}
+
+.people-info i{
+    color: var(--primary-color-dark) !important;
+}
+
+.people-info p{
+    color: white !important;
+    margin-bottom: 20px;
+    font-size: 18px;
+    font-style: italic !important;
+}
+
+.about-person{
+    margin-top: 20px;
+}
+
+.about-person h4{
     color: var(--primary-color) !important;
 }
 
-.client-card img{
-    border: 1px solid var(--primary-color) !important;   
+.about-person span{
+    color: var(--text-color-muted) !important;
+}
+
+.bg-none{
+    background: none !important;
 }

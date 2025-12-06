@@ -9,8 +9,10 @@
     <!-- Icon -->
     <link rel="icon" href="./assets/images/icon.png">
 
+    <!-- Swiper Slide CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <!-- Font Awesome CDN -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
@@ -18,7 +20,6 @@
     <!-- Style CSS -->
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
-
 
 <body>
     <nav class="navbar navbar-expand-lg position-sticky top-0">
@@ -53,7 +54,6 @@
         </div>
     </nav>
 
-
     <section class="hero-page">
         <div class="container mt-5">
             <div class="row gy-5">
@@ -76,11 +76,8 @@
                         </div>
                         <div class="btn-group gap-4 justify-content-center align-items-center">
                             <button class="primary-btn glow-button">Get in Touch</button>
-                            <a href="./assets/pdf/Vivek Resum.docx.pdf" download="Vivek Resum">
-                                <button class="download-cv text-white">
-                                    Download CV
-                                    <i class="fa-solid fa-download"></i>
-                                </button>
+                            <a class="download-cv" href="./assets/pdf/Vivek-Resume.pdf" download>
+                                Download CV <i class="fa-solid fa-download"></i>
                             </a>
                         </div>
                     </div>
@@ -348,44 +345,25 @@
             </div>
             <div class="row">
                 <div class="sec-head text-center text-uppercase glow-text position-relative">
-                <span class="rounded-pill d-inline-block mt-3 mb-5">
-                    All
-                </span>
-                <span class="rounded-pill d-inline-block mt-3 mb-5">
-                    Web Design
-                </span>
-                <span class="rounded-pill d-inline-block mt-3 mb-5">
-                    App Design
-                </span>
-                <span class="rounded-pill d-inline-block mt-3 mb-5">
-                    Branding
-                </span>
-            </div>
+                    <span class="rounded-pill d-inline-block mt-3 mb-5">
+                        All
+                    </span>
+                    <span class="rounded-pill d-inline-block mt-3 mb-5">
+                        Web Design
+                    </span>
+                    <span class="rounded-pill d-inline-block mt-3 mb-5">
+                        App Design
+                    </span>
+                    <span class="rounded-pill d-inline-block mt-3 mb-5">
+                        Branding
+                    </span>
+                </div>
             </div>
             <div class="row gy-5">
-                <div class="col-lg-3 col-md-6">
+                <div class="col-lg-6">
                     <div class="project-page">
                         <div class="project-card">
-                            <img src="./assets/images/project-1.png" alt="" class="w-100 rounded-4">
-                        </div>
-                        <div class="project-info d-inline-block">
-                            <h3>
-                                Mobile App
-                            </h3>
-                            <p>
-                                App Development
-                            </p>
-                            <a href="" class="project-link">
-                                <i class="fas fa-external-link-alt"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-3 col-md-6">
-                    <div class="project-page">
-                        <div class="project-card">
-                            <img src="./assets/images/project-2.jpeg" alt="" class="w-100 rounded-4">
+                            <img src="./assets/images/project.png" alt="" class="w-100 rounded-4">
                         </div>
                         <div class="project-info">
                             <h3>
@@ -394,17 +372,14 @@
                             <p>
                                 App Development
                             </p>
-                            <a href="" class="project-link">
-                                <i class="fas fa-external-link-alt"></i>
-                            </a>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-lg-3 col-md-6">
+                <div class="col-lg-6">
                     <div class="project-page">
                         <div class="project-card">
-                            <img src="./assets/images/project-3.png" alt="" class="w-100 rounded-4">
+                            <img src="./assets/images/project.png" alt="" class="w-100 rounded-4">
                         </div>
                         <div class="project-info">
                             <h3>
@@ -413,17 +388,14 @@
                             <p>
                                 App Development
                             </p>
-                            <a href="" class="project-link">
-                                <i class="fas fa-external-link-alt"></i>
-                            </a>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-lg-3 col-md-6">
+                <div class="col-lg-6">
                     <div class="project-page">
                         <div class="project-card">
-                            <img src="./assets/images/project-1.png" alt="" class="w-100 rounded-4">
+                            <img src="./assets/images/project.png" alt="" class="w-100 rounded-4">
                         </div>
                         <div class="project-info">
                             <h3>
@@ -432,9 +404,22 @@
                             <p>
                                 App Development
                             </p>
-                            <a href="" class="project-link">
-                                <i class="fas fa-external-link-alt"></i>
-                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <div class="project-page">
+                        <div class="project-card">
+                            <img src="./assets/images/project.png" alt="" class="w-100 rounded-4">
+                        </div>
+                        <div class="project-info">
+                            <h3>
+                                Mobile App
+                            </h3>
+                            <p>
+                                App Development
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -445,43 +430,47 @@
     <section class="client-page">
         <div class="container">
             <div class="sec-head text-center text-uppercase glow-text position-relative">
-            <span class="rounded-pill d-inline-block">
-                Who Trust Me
-            </span>
-            <h2 class="">
-                Featured Clients
-            </h2>
-            <div class="head-line "></div>
-        </div>
-            <div class="row">
-                <div class="col-3">
+                <span class="rounded-pill d-inline-block">
+                    Who Trust Me
+                </span>
+                <h2 class="">
+                    Featured Clients
+                </h2>
+                <div class="head-line "></div>
+            </div>
+            <div class="row justify-content-center align-items-center">
+                <div class="col-lg-3 col-md-6">
                     <div class="about-client">
                         <div class="client-card">
-                            <img src="./assets/images/client-1.png" alt="Clients" class="w-100 p-4 object-fit-cover rounded-3">
+                            <img src="./assets/images/client-1.png" alt="Clients"
+                                class="w-100 p-4 object-fit-cover rounded-3">
                         </div>
                     </div>
                 </div>
-                
-                <div class="col-3">
+
+                <div class="col-lg-3 col-md-6">
                     <div class="about-client">
                         <div class="client-card">
-                            <img src="./assets/images/client-2.png" alt="Clients" class="w-100 p-4 object-fit-cover rounded-3">
+                            <img src="./assets/images/client-2.png" alt="Clients"
+                                class="w-100 p-4 object-fit-cover rounded-3">
                         </div>
                     </div>
                 </div>
-                
-                <div class="col-3">
+
+                <div class="col-lg-3 col-md-6">
                     <div class="about-client">
                         <div class="client-card">
-                            <img src="./assets/images/client-3.png" alt="Clients" class="w-100 p-4 object-fit-cover rounded-3">
+                            <img src="./assets/images/client-3.png" alt="Clients"
+                                class="w-100 p-4 object-fit-cover rounded-3">
                         </div>
                     </div>
                 </div>
-                
-                <div class="col-3">
+
+                <div class="col-lg-3 col-md-6">
                     <div class="about-client">
                         <div class="client-card">
-                            <img src="./assets/images/client-4.png" alt="Clients" class="w-100 p-4 object-fit-cover rounded-3">
+                            <img src="./assets/images/client-4.png" alt="Clients"
+                                class="w-100 p-4 object-fit-cover rounded-3">
                         </div>
                     </div>
                 </div>
@@ -489,7 +478,215 @@
         </div>
     </section>
 
+    <section class="test-page">
+        <div class="container">
+            <div class="sec-head text-center text-uppercase glow-text position-relative">
+                <span class="rounded-pill d-inline-block">
+                    What People Say
+                </span>
+                <h2 class="">
+                    Testimonials
+                </h2>
+                <div class="head-line "></div>
+            </div>
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide mt-3">
+                        <div class="slide-img">
+                            <img src="./assets/images/people-1.jpeg" alt="People">
+                        </div>
+                        <div class="people-info">
+                            <div class="info-icon">
+                                <i class="fa-solid fa-quote-left"></i>
+                            </div>
+                            <p>
+                                "The attention to creative solutions provided exceeded our expectations. The project was
+                                delivered on time and the results were amazing."
+                            </p>
+                            <div class="about-person">
+                                <h4>
+                                    John Doe
+                                </h4>
+                                <span>
+                                    CEO, Tech Corp
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide mt-3">
+                        <div class="slide-img">
+                            <img src="./assets/images/people-2.png" alt="People">
+                        </div>
+                        <div class="people-info">
+                            <div class="info-icon">
+                                <i class="fa-solid fa-quote-left"></i>
+                            </div>
+                            <p>
+                                "Incredible talent and professionalism. The final product was exactly what we needed.
+                                The communication throughout the project was excellent."
+                            </p>
+                            <div class="about-person">
+                                <h4>
+                                    Jane Smith
+                                </h4>
+                                <span>
+                                    Marketing Director
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide mt-3">
+                        <div class="slide-img">
+                            <img src="./assets/images/people-3.jpeg" alt="People">
+                        </div>
+                        <div class="people-info">
+                            <div class="info-icon">
+                                <i class="fa-solid fa-quote-left"></i>
+                            </div>
+                            <p>
+                                "A true professional who delivers high-quality work consistently. Highly recommended!
+                                Looking forward to working together on future projects."
+                            </p>
+                            <div class="about-person">
+                                <h4>
+                                    Mike Johnson
+                                </h4>
+                                <span>
+                                    Project Manager
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide mt-3">
+                        <div class="slide-img">
+                            <img src="./assets/images/people-3.jpeg" alt="People">
+                        </div>
+                        <div class="people-info">
+                            <div class="info-icon">
+                                <i class="fa-solid fa-quote-left"></i>
+                            </div>
+                            <p>
+                                "A true professional who delivers high-quality work consistently. Highly recommended!
+                                Looking forward to working together on future projects."
+                            </p>
+                            <div class="about-person">
+                                <h4>
+                                    Mike Johnson
+                                </h4>
+                                <span>
+                                    Project Manager
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide mt-3">
+                        <div class="slide-img">
+                            <img src="./assets/images/people-3.jpeg" alt="People">
+                        </div>
+                        <div class="people-info">
+                            <div class="info-icon">
+                                <i class="fa-solid fa-quote-left"></i>
+                            </div>
+                            <p>
+                                "A true professional who delivers high-quality work consistently. Highly recommended!
+                                Looking forward to working together on future projects."
+                            </p>
+                            <div class="about-person">
+                                <h4>
+                                    Mike Johnson
+                                </h4>
+                                <span>
+                                    Project Manager
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide mt-3">
+                        <div class="slide-img">
+                            <img src="./assets/images/people-3.jpeg" alt="People">
+                        </div>
+                        <div class="people-info">
+                            <div class="info-icon">
+                                <i class="fa-solid fa-quote-left"></i>
+                            </div>
+                            <p>
+                                "A true professional who delivers high-quality work consistently. Highly recommended!
+                                Looking forward to working together on future projects."
+                            </p>
+                            <div class="about-person">
+                                <h4>
+                                    Mike Johnson
+                                </h4>
+                                <span>
+                                    Project Manager
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide mt-3">
+                        <div class="slide-img">
+                            <img src="./assets/images/people-3.jpeg" alt="People">
+                        </div>
+                        <div class="people-info">
+                            <div class="info-icon">
+                                <i class="fa-solid fa-quote-left"></i>
+                            </div>
+                            <p>
+                                "A true professional who delivers high-quality work consistently. Highly recommended!
+                                Looking forward to working together on future projects."
+                            </p>
+                            <div class="about-person">
+                                <h4>
+                                    Mike Johnson
+                                </h4>
+                                <span>
+                                    Project Manager
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="swiper-pagination"></div> -->
+
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bootstrap Script -->
     <script src="./assets/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Swiper  JS CDN-->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script>
+            var swiper = new Swiper(".mySwiper", {
+                slidesPerView: 1,
+                slidesPerGroup: 3,
+                spaceBetween: 30,
+                pagination: {
+                    el: ".swiper-pagination",
+                    clickable: true,
+                },
+                navigation: {
+                    nextEl: ".swiper-button-next",
+                    prevEl: ".swiper-button-prev",
+                },
+                breakpoints: {
+                    576: { slidesPerView: 1 },
+                    768: { slidesPerView: 2 },
+                    992: { slidesPerView: 3 }
+                }
+            });
+    </script>
+
 </body>
 
 </html>

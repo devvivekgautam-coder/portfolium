@@ -33,7 +33,7 @@ section {
     font-weight: 700;
     position: relative;
     z-index: 1;
-    background:linear-gradient(45deg, var(--primary-color), #005461);;
+    background:linear-gradient(45deg, var(--primary-color), #005461);
     background-clip: text;
     -webkit-text-fill-color: transparent;
     transition: all 0.2s linear;
@@ -565,4 +565,180 @@ p {
 
 .bg-none{
     background: none !important;
+}
+
+.contact-card {
+    background: var(--primary-color-dark);
+    border-radius: 20px;
+    padding: 10px;
+    text-align: center;
+    border: 1px solid var(--primary-color);
+    transition: all 0.3s linear;
+}
+
+.contact-card h3{
+    font-size: 20px !important;
+}
+
+.contact-icon {
+    width: 60px;
+    height: 60px;
+    margin: 0 auto;
+    background: var(--primary-color-dark);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-icon i{
+    color: var(--primary-color);
+    font-size: 1.5rem;
+}
+
+.form-control {
+    width: 100%;
+    padding: 15px 20px;
+    background: var(--primary-color-dark);
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+.form-control:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px var(--primary-color);
+}
+
+textarea.form-control {
+    min-height: 150px;
+    resize: vertical;
+}
+
+.submit-btn {
+    background: var(--primary-color);
+    color: var(--background-dark);
+    border: none;
+    padding: 15px 40px;
+    border-radius: 30px;
+    font-size: 1rem;
+    font-weight: 600;
+    gap: 10px;
+    cursor: pointer;
+    transition: all 0.3s linear;
+}
+
+.contact-form {
+    background: var(--primary-color);
+    border-radius: 20px;
+    padding: 75px;
+    border: 1px solid var(--primary-color-dark);
+}
+
+.form-message {
+    margin-top: 20px;
+    padding: 15px;
+    border-radius: 8px;
+    font-size: 1rem;
+    text-align: center;
+    opacity: 0;
+    transform: translateY(-10px);
+    animation: fadeSlideDown 0.3s forwards;
+}
+
+.footer-content h3{
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+    background: linear-gradient(45deg, var(--primary-color), #005461);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.footer-content p{
+    color: var(--text-color);
+}
+
+.social-link {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: var(--primary-color-dark);
+    color: var(--primary-color);
+    font-size: 1.2rem;
+    transition: all 0.3s linear;
+}
+
+.social-link:hover{
+    transform: translateY(-5px);
+    cursor: pointer;
+}
+
+.footer-content {
+    text-align: center;
+}
+
+.footer-content h4{
+    color: var(--text-color);
+}
+
+.footer-content ul li{
+    color: var(--text-color-muted);
+    list-style: none;
+    font-size: 20px;
+    transition: all 0.2s linear;
+}
+
+.footer-content ul li:hover{
+    cursor: pointer;
+    color: var(--primary-color);
+    transform: translateY(-5px);
+    border-bottom: 1px solid var(--primary-color);
+}
+
+.footer-bottem{
+    border-top: 1px solid var(--primary-color);
+    padding: 30px 0;
+}
+
+.footer-bottem p{
+    color: var(--text-color-muted);
+}
+
+.footer-bottem i{
+    color: var(--primary-color);
+}
+
+.footer-bottem a {
+    color: var(--primary-color) !important;
+}
+
+.scroll-top button{
+    background-color: transparent;
+    border: none;
+}
+
+.scroll-top button i{
+    color: var(--primary-color);
+    font-size: 1.2rem;
+    position: relative;
+    z-index: 2;
+    transition: all 0.3s linear;
+}
+
+.scroll-top {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 50px;
+    height: 50px;
+    background: var(--primary-color-dark);
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 1;
+    transform: translateY(20px);
 }

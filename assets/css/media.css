@@ -1,0 +1,49 @@
+@media (max-width: 992px) {
+    .client-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .experience-badge {
+        width: 120px;
+        height: 120px;
+        right: 40px;
+    }
+
+    .experience-badge .years {
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar-brand {
+        font-size: 1.8rem;
+    }
+
+    .contact-form {
+        padding: 30px;
+    }
+}
+
+@media (max-width: 576px) {
+    .client-grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .my-badge {
+        bottom: 30px;
+        right: 30px;
+        width: 50px;
+        height: 50px;
+    }
+
+    .experience-badge {
+        width: 100px;
+        height: 100px;
+        right: 20px;
+        top: 10px;
+    }
+
+    .experience-badge .years {
+        font-size: 2rem;
+    }
+}

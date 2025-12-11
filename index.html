@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio-Personal</title>
+    <title>Vivek Gautam | Product Designer Portfolio</title>
 
     <!-- Icon -->
     <link rel="icon" href="./assets/images/icon.png">
@@ -19,13 +19,21 @@
 
     <!-- Style CSS -->
     <link rel="stylesheet" href="./assets/css/style.css">
+
+    <!-- Media CSS -->
+    <link rel="stylesheet" href="./assets/css/media.css">
+
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg position-sticky top-0">
+    <div class="theme-preview d-none d-md-block">
+        <i class="fas fa-gem me-2"></i>Gold & Silver Theme Active
+    </div>
+
+    <nav id="top" class="navbar navbar-expand-lg position-sticky top-0">
         <div class="container d-flex justify-content-evenly align-items-center">
             <a class="navbar-brand" href="./index.html" target="_blank">
-                Portfolium
+                <i class="fas fa-gem me-2"></i>Portfolium
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -34,50 +42,57 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav mx-auto mb-2 mb-lg-0 gap-4 fw-semibold">
                     <li class="nav-item">
-                        <a class="nav-link active active-link" href="#">Home</a>
+                        <a class="nav-link active active-link" href="#"><i class="fas fa-home me-1"></i>Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Service</a>
+                        <a class="nav-link" href="#services"><i class="fas fa-cogs me-1"></i>Services</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">About</a>
+                        <a class="nav-link" href="#about"><i class="fas fa-user me-1"></i>About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Project</a>
+                        <a class="nav-link" href="#projects"><i class="fas fa-briefcase me-1"></i>Projects</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Contact</a>
+                        <a class="nav-link" href="#contact"><i class="fas fa-envelope me-1"></i>Contact</a>
                     </li>
                 </ul>
-                <button class="contact-btn text-white">Let's Talk</button>
+                <button class="contact-btn text-white hover-gold">
+                    <i class="fas fa-comment-dots me-2"></i>Let's Talk
+                </button>
             </div>
         </div>
     </nav>
 
+    <!-- Hero Section -->
     <section class="hero-page">
         <div class="container mt-5">
-            <div class="row gy-5">
+            <div class="row gy-5 align-items-center">
                 <div class="col-lg-6">
                     <div class="hero-sec">
                         <div class="abt-page text-white">
-                            <h5>"Hello There!"</h5>
+                            <h5 class="shiny-silver">"Hello There!"</h5>
                             <h1 class="lh-base">
                                 I'm
-                                <span class="glow-text">
+                                <span class="shiny-gold">
                                     Vivek Gautam
                                 </span>
                             </h1>
                             <h2 class="lh-base">
-                                Product Designer based in IND.
+                                <span class="shiny-silver">Product Designer</span> based in IND.
                             </h2>
                             <p class="lh-base">
-                                A passionate Product Designer with an eye for detail and a drive for innovation.
+                                A passionate <span class="gold-text">Product Designer</span> with an eye for detail and
+                                a drive for innovation, creating exceptional digital experiences with <span
+                                    class="silver-text">premium quality</span>.
                             </p>
                         </div>
                         <div class="btn-group gap-4 justify-content-center align-items-center">
-                            <button class="primary-btn glow-button">Get in Touch</button>
-                            <a class="download-cv" href="./assets/pdf/Vivek-Resume.pdf" download>
-                                Download CV <i class="fa-solid fa-download"></i>
+                            <button class="primary-btn glow-button hover-gold">
+                                <i class="fas fa-paper-plane me-2"></i>Get in Touch
+                            </button>
+                            <a class="download-cv hover-silver" href="./assets/pdf/Vivek Resum.docx.pdf" download>
+                                <i class="fa-solid fa-download me-2"></i>Download CV
                             </a>
                         </div>
                     </div>
@@ -85,11 +100,11 @@
 
                 <div class="col-lg-6">
                     <div class="hero-sec">
-                        <div class="profile-img  position-relative">
-                            <img src="./assets/images/img-1.png" alt="Men">
+                        <div class="profile-img position-relative">
+                            <img src="./assets/images/img-1.png" alt="Vivek Gautam - Product Designer">
 
                             <div class="my-badge rounded-circle align-items-center justify-content-center d-flex">
-                                <i class="fa-solid fa-check"></i>
+                                <i class="fa-solid fa-award"></i>
                             </div>
                         </div>
                     </div>
@@ -98,40 +113,41 @@
         </div>
     </section>
 
-    <section class="service-sec">
+    <!-- Services Section -->
+    <section id="services" class="service-sec">
         <div class="container">
-            <div class="sec-head text-center text-uppercase glow-text position-relative">
-                <span class="rounded-pill d-inline-block">
-                    My Expertise
+            <div class="sec-head text-center text-uppercase position-relative">
+                <span class="rounded-pill d-inline-block shiny-silver">
+                    <i class="fas fa-star me-2"></i>My Expertise
                 </span>
-                <h2 class="">
+                <h2 class="shiny-gold">
                     Services I Offer
                 </h2>
-                <div class="head-line "></div>
+                <div class="head-line"></div>
             </div>
             <div class="row align-items-center justify-content-center">
                 <div class="col-lg-4">
                     <div class="service-page">
-                        <div class="abt-service">
+                        <div class="abt-service hover-gold">
                             <div class="service-icon">
                                 <i class="fa-solid fa-desktop"></i>
                             </div>
-                            <h3>
+                            <h3 class="gold-text">
                                 Web Design
                             </h3>
-                            <p>
+                            <p class="silver-text">
                                 Creating beautiful, responsive websites that engage users and drive results.
                             </p>
                             <ul class="group-icon list-unstyled">
-                                <li class="">
+                                <li class="hover-silver">
                                     <i class="fa-solid fa-check"></i>
                                     Custom Designs
                                 </li>
-                                <li class="">
+                                <li class="hover-silver">
                                     <i class="fa-solid fa-check"></i>
                                     Responsive Layout
                                 </li>
-                                <li class="">
+                                <li class="hover-silver">
                                     <i class="fa-solid fa-check"></i>
                                     User Experience
                                 </li>
@@ -142,26 +158,26 @@
 
                 <div class="col-lg-4">
                     <div class="service-page">
-                        <div class="abt-service">
+                        <div class="abt-service hover-silver">
                             <div class="service-icon">
                                 <i class="fa-solid fa-mobile-screen-button"></i>
                             </div>
-                            <h3>
+                            <h3 class="silver-text">
                                 App Design
                             </h3>
-                            <p>
+                            <p class="gold-text">
                                 Crafting intuitive mobile applications that users love to interact with.
                             </p>
                             <ul class="group-icon list-unstyled">
-                                <li class="">
+                                <li class="hover-gold">
                                     <i class="fa-solid fa-check"></i>
                                     Native Apps
                                 </li>
-                                <li class="">
+                                <li class="hover-gold">
                                     <i class="fa-solid fa-check"></i>
                                     Cross-platform
                                 </li>
-                                <li class="">
+                                <li class="hover-gold">
                                     <i class="fa-solid fa-check"></i>
                                     User-friendly UI
                                 </li>
@@ -172,26 +188,26 @@
 
                 <div class="col-lg-4">
                     <div class="service-page">
-                        <div class="abt-service">
+                        <div class="abt-service hover-gold">
                             <div class="service-icon">
                                 <i class="fa-solid fa-chart-line"></i>
                             </div>
-                            <h3>
+                            <h3 class="gold-text">
                                 Dashboard Design
                             </h3>
-                            <p>
+                            <p class="silver-text">
                                 Building powerful analytics dashboards for data-driven decisions.
                             </p>
                             <ul class="group-icon list-unstyled">
-                                <li class="">
+                                <li class="hover-silver">
                                     <i class="fa-solid fa-check"></i>
                                     Real-time Data
                                 </li>
-                                <li class="">
+                                <li class="hover-silver">
                                     <i class="fa-solid fa-check"></i>
                                     Interactive Charts
                                 </li>
-                                <li class="">
+                                <li class="hover-silver">
                                     <i class="fa-solid fa-check"></i>
                                     Custom Reports
                                 </li>
@@ -203,25 +219,27 @@
         </div>
     </section>
 
-    <section class="about-page">
-        <div class="sec-head text-center text-uppercase glow-text position-relative">
-            <span class="rounded-pill d-inline-block">
-                About Me
+    <!-- About Section -->
+    <section id="about" class="about-page">
+        <div class="sec-head text-center text-uppercase position-relative">
+            <span class="rounded-pill d-inline-block shiny-silver">
+                <i class="fas fa-user me-2"></i>About Me
             </span>
-            <h2 class="">
+            <h2 class="shiny-gold">
                 Who Am I?
             </h2>
-            <div class="head-line "></div>
+            <div class="head-line"></div>
         </div>
         <div class="container">
-            <div class="row">
+            <div class="row align-items-center">
                 <div class="col-lg-5">
                     <div class="about-sec">
                         <div class="about-skill">
                             <div class="image-profile position-relative">
-                                <img src="./assets/images/img-2.png" alt="Men" class="w-100">
-                                <div class="experience-badge glow-effect">
-                                    <span class="years">
+                                <img src="./assets/images/img-2.png" alt="Vivek Gautam Experience"
+                                    class="w-100 rounded-4">
+                                <div class="experience-badge glow-effect hover-gold">
+                                    <span class="years shiny-gold">
                                         18+
                                     </span>
                                     <span class="text">
@@ -238,31 +256,33 @@
                 <div class="col-lg-7">
                     <div class="about-sec">
                         <div class="about-skill">
-                            <p class="abt-me mb-4 fs-5">
-                                I'm a passionate Product Designer who transforms ideas into exceptional digital
-                                experiences. With 18+ years of experience, I've helped numerous clients achieve their
-                                digital goals.
+                            <p class="abt-me mb-4 fs-5 silver-text">
+                                I'm a passionate <span class="gold-text">Product Designer</span> who transforms ideas
+                                into exceptional digital experiences. With <span class="shiny-gold">18+ years</span> of
+                                experience, I've helped numerous clients achieve their digital goals.
                             </p>
                             <p class="text-white mb-4">
-                                My approach combines creativity with user-centered design principles to create intuitive
-                                and engaging digital solutions that drive results.
+                                My approach combines <span class="gold-text">creativity</span> with user-centered design
+                                principles to create intuitive and engaging digital solutions that drive <span
+                                    class="silver-text">exceptional results</span>.
                             </p>
                         </div>
                     </div>
-                    <div class="row">
+                    <div class="row mb-4">
                         <div class="skill-title">
-                            <h3 class="glow-text mb-4 text-white">
-                                My Skill
+                            <h3 class="shiny-gold mb-4">
+                                <i class="fas fa-chart-bar me-2"></i>My Skills
                             </h3>
                         </div>
                         <div class="col-md-6">
                             <div class="skill">
                                 <div class="my-skill">
                                     <div class="d-flex justify-content-between text-white mb-3">
-                                        <span>UI/UX Design</span>
-                                        <span>95%</span>
+                                        <span class="silver-text">UI/UX Design</span>
+                                        <span class="gold-text">95%</span>
                                     </div>
-                                    <div class="progress" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
+                                    <div class="progress hover-gold" aria-valuenow="90" aria-valuemin="0"
+                                        aria-valuemax="100">
                                         <div class="progress-bar" style="width: 95%;"></div>
                                     </div>
                                 </div>
@@ -273,10 +293,11 @@
                             <div class="skill">
                                 <div class="my-skill">
                                     <div class="d-flex justify-content-between text-white mb-3">
-                                        <span>Web Design</span>
-                                        <span>90%</span>
+                                        <span class="silver-text">Web Design</span>
+                                        <span class="gold-text">90%</span>
                                     </div>
-                                    <div class="progress" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
+                                    <div class="progress hover-silver" aria-valuenow="90" aria-valuemin="0"
+                                        aria-valuemax="100">
                                         <div class="progress-bar" style="width: 90%;"></div>
                                     </div>
                                 </div>
@@ -287,12 +308,12 @@
                     <div class="row">
                         <div class="col-md-4">
                             <div class="skill-wrapper">
-                                <div class="skill-card">
-                                    <i class="fa-solid fa-diagram-project"></i>
-                                    <h3 class="mt-4">
+                                <div class="skill-card hover-gold">
+                                    <i class="fa-solid fa-diagram-project gold-text"></i>
+                                    <h3 class="mt-4 shiny-gold">
                                         400+
                                     </h3>
-                                    <span>
+                                    <span class="silver-text">
                                         Project Completed
                                     </span>
                                 </div>
@@ -301,12 +322,12 @@
 
                         <div class="col-md-4">
                             <div class="skill-wrapper">
-                                <div class="skill-card">
-                                    <i class="fa-solid fa-face-smile"></i>
-                                    <h3 class="mt-4">
+                                <div class="skill-card hover-silver">
+                                    <i class="fa-solid fa-face-smile silver-text"></i>
+                                    <h3 class="mt-4 shiny-silver">
                                         60+
                                     </h3>
-                                    <span>
+                                    <span class="gold-text">
                                         Happy Clients
                                     </span>
                                 </div>
@@ -315,12 +336,12 @@
 
                         <div class="col-md-4">
                             <div class="skill-wrapper">
-                                <div class="skill-card">
-                                    <i class="fa-solid fa-award"></i>
-                                    <h3 class="mt-4">
+                                <div class="skill-card hover-gold">
+                                    <i class="fa-solid fa-award gold-text"></i>
+                                    <h3 class="mt-4 shiny-gold">
                                         18+
                                     </h3>
-                                    <span>
+                                    <span class="silver-text">
                                         Years Experience
                                     </span>
                                 </div>
@@ -332,44 +353,48 @@
         </div>
     </section>
 
-    <section class="project-sec">
+    <!-- Projects Section -->
+    <section id="projects" class="project-sec">
         <div class="container">
-            <div class="sec-head text-center text-uppercase glow-text position-relative">
-                <span class="rounded-pill d-inline-block">
-                    My Work
+            <div class="sec-head text-center text-uppercase position-relative">
+                <span class="rounded-pill d-inline-block shiny-silver">
+                    <i class="fas fa-briefcase me-2"></i>My Work
                 </span>
-                <h2 class="">
+                <h2 class="shiny-gold">
                     Featured Projects
                 </h2>
-                <div class="head-line "></div>
+                <div class="head-line"></div>
             </div>
-            <div class="row">
-                <div class="sec-head text-center text-uppercase glow-text position-relative">
-                    <span class="rounded-pill d-inline-block mt-3 mb-5">
-                        All
-                    </span>
-                    <span class="rounded-pill d-inline-block mt-3 mb-5">
-                        Web Design
-                    </span>
-                    <span class="rounded-pill d-inline-block mt-3 mb-5">
-                        App Design
-                    </span>
-                    <span class="rounded-pill d-inline-block mt-3 mb-5">
-                        Branding
-                    </span>
+            <div class="row mb-5">
+                <div class="sec-head text-center position-relative">
+                    <button
+                        class="rounded-pill d-inline-block mt-3 mb-5 me-3 border-0 px-4 py-2 hover-gold gold-text active-project">
+                        <i class="fas fa-layer-group me-2"></i>All
+                    </button>
+                    <button
+                        class="rounded-pill d-inline-block mt-3 mb-5 me-3 border-0 px-4 py-2 hover-silver silver-text">
+                        <i class="fas fa-desktop me-2"></i>Web Design
+                    </button>
+                    <button class="rounded-pill d-inline-block mt-3 mb-5 me-3 border-0 px-4 py-2 hover-gold gold-text">
+                        <i class="fas fa-mobile-alt me-2"></i>App Design
+                    </button>
+                    <button class="rounded-pill d-inline-block mt-3 mb-5 border-0 px-4 py-2 hover-silver silver-text">
+                        <i class="fas fa-palette me-2"></i>Branding
+                    </button>
                 </div>
             </div>
             <div class="row gy-5">
                 <div class="col-lg-6">
                     <div class="project-page">
                         <div class="project-card">
-                            <img src="./assets/images/project.png" alt="" class="w-100 rounded-4">
+                            <img src="./assets/images/project.png" alt="Mobile App Project"
+                                class="w-100 rounded-4 hover-gold">
                         </div>
                         <div class="project-info">
-                            <h3>
-                                Mobile App
+                            <h3 class="shiny-gold">
+                                <i class="fas fa-mobile-alt me-2"></i>Mobile App
                             </h3>
-                            <p>
+                            <p class="silver-text">
                                 App Development
                             </p>
                         </div>
@@ -379,14 +404,15 @@
                 <div class="col-lg-6">
                     <div class="project-page">
                         <div class="project-card">
-                            <img src="./assets/images/project.png" alt="" class="w-100 rounded-4">
+                            <img src="./assets/images/project.png" alt="E-commerce Website"
+                                class="w-100 rounded-4 hover-silver">
                         </div>
                         <div class="project-info">
-                            <h3>
-                                Mobile App
+                            <h3 class="shiny-silver">
+                                <i class="fas fa-shopping-cart me-2"></i>E-commerce Website
                             </h3>
-                            <p>
-                                App Development
+                            <p class="gold-text">
+                                Web Development
                             </p>
                         </div>
                     </div>
@@ -395,14 +421,15 @@
                 <div class="col-lg-6">
                     <div class="project-page">
                         <div class="project-card">
-                            <img src="./assets/images/project.png" alt="" class="w-100 rounded-4">
+                            <img src="./assets/images/project.png" alt="Dashboard Design"
+                                class="w-100 rounded-4 hover-gold">
                         </div>
                         <div class="project-info">
-                            <h3>
-                                Mobile App
+                            <h3 class="shiny-gold">
+                                <i class="fas fa-chart-pie me-2"></i>Analytics Dashboard
                             </h3>
-                            <p>
-                                App Development
+                            <p class="silver-text">
+                                Dashboard Design
                             </p>
                         </div>
                     </div>
@@ -411,14 +438,15 @@
                 <div class="col-lg-6">
                     <div class="project-page">
                         <div class="project-card">
-                            <img src="./assets/images/project.png" alt="" class="w-100 rounded-4">
+                            <img src="./assets/images/project.png" alt="Brand Identity"
+                                class="w-100 rounded-4 hover-silver">
                         </div>
                         <div class="project-info">
-                            <h3>
-                                Mobile App
+                            <h3 class="shiny-silver">
+                                <i class="fas fa-palette me-2"></i>Brand Identity
                             </h3>
-                            <p>
-                                App Development
+                            <p class="gold-text">
+                                Branding Design
                             </p>
                         </div>
                     </div>
@@ -427,133 +455,116 @@
         </div>
     </section>
 
+    <!-- Clients Section -->
     <section class="client-page">
         <div class="container">
-            <div class="sec-head text-center text-uppercase glow-text position-relative">
-                <span class="rounded-pill d-inline-block">
-                    Who Trust Me
+            <div class="sec-head text-center text-uppercase position-relative">
+                <span class="rounded-pill d-inline-block shiny-silver">
+                    <i class="fas fa-handshake me-2"></i>Who Trust Me
                 </span>
-                <h2 class="">
+                <h2 class="shiny-gold">
                     Featured Clients
                 </h2>
-                <div class="head-line "></div>
+                <div class="head-line"></div>
             </div>
-            <div class="row justify-content-center align-items-center">
-                <div class="col-lg-3 col-md-6">
-                    <div class="about-client">
-                        <div class="client-card">
-                            <img src="./assets/images/client-1.png" alt="Clients"
-                                class="w-100 p-4 object-fit-cover rounded-3">
-                        </div>
-                    </div>
+
+            <div class="client-grid">
+                <div class="client-box hover-gold">
+                    <img src="./assets/images/client-1.png" alt="TechCorp">
                 </div>
 
-                <div class="col-lg-3 col-md-6">
-                    <div class="about-client">
-                        <div class="client-card">
-                            <img src="./assets/images/client-2.png" alt="Clients"
-                                class="w-100 p-4 object-fit-cover rounded-3">
-                        </div>
-                    </div>
+                <div class="client-box hover-silver">
+                    <img src="./assets/images/client-2.png" alt="InnovateCo">
                 </div>
 
-                <div class="col-lg-3 col-md-6">
-                    <div class="about-client">
-                        <div class="client-card">
-                            <img src="./assets/images/client-3.png" alt="Clients"
-                                class="w-100 p-4 object-fit-cover rounded-3">
-                        </div>
-                    </div>
+                <div class="client-box hover-gold">
+                    <img src="./assets/images/client-3.png" alt="GlobalSolutions">
                 </div>
 
-                <div class="col-lg-3 col-md-6">
-                    <div class="about-client">
-                        <div class="client-card">
-                            <img src="./assets/images/client-4.png" alt="Clients"
-                                class="w-100 p-4 object-fit-cover rounded-3">
-                        </div>
-                    </div>
+                <div class="client-box hover-silver">
+                    <img src="./assets/images/client-4.png" alt="DigitalEdge">
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- Testimonials Section -->
     <section class="test-page">
         <div class="container">
-            <div class="sec-head text-center text-uppercase glow-text position-relative">
-                <span class="rounded-pill d-inline-block">
-                    What People Say
+            <div class="sec-head text-center text-uppercase position-relative">
+                <span class="rounded-pill d-inline-block shiny-silver">
+                    <i class="fas fa-comment-dots me-2"></i>What People Say
                 </span>
-                <h2 class="">
+                <h2 class="shiny-gold">
                     Testimonials
                 </h2>
-                <div class="head-line "></div>
+                <div class="head-line"></div>
             </div>
             <div class="swiper mySwiper">
                 <div class="swiper-wrapper">
-                    <div class="swiper-slide mt-3">
+                    <div class="swiper-slide mt-3 hover-gold">
                         <div class="slide-img">
-                            <img src="./assets/images/people-1.jpeg" alt="People">
+                            <img src="./assets/images/people-1.jpeg" alt="John Doe">
                         </div>
                         <div class="people-info">
                             <div class="info-icon">
-                                <i class="fa-solid fa-quote-left"></i>
+                                <i class="fa-solid fa-quote-left gold-text"></i>
                             </div>
-                            <p>
+                            <p class="silver-text">
                                 "The attention to creative solutions provided exceeded our expectations. The project was
                                 delivered on time and the results were amazing."
                             </p>
                             <div class="about-person">
-                                <h4>
+                                <h4 class="shiny-gold">
                                     John Doe
                                 </h4>
-                                <span>
+                                <span class="silver-text">
                                     CEO, Tech Corp
                                 </span>
                             </div>
                         </div>
                     </div>
 
-                    <div class="swiper-slide mt-3">
+                    <div class="swiper-slide mt-3 hover-silver">
                         <div class="slide-img">
-                            <img src="./assets/images/people-2.png" alt="People">
+                            <img src="./assets/images/people-2.png" alt="Jane Smith">
                         </div>
                         <div class="people-info">
                             <div class="info-icon">
-                                <i class="fa-solid fa-quote-left"></i>
+                                <i class="fa-solid fa-quote-left silver-text"></i>
                             </div>
-                            <p>
+                            <p class="gold-text">
                                 "Incredible talent and professionalism. The final product was exactly what we needed.
                                 The communication throughout the project was excellent."
                             </p>
                             <div class="about-person">
-                                <h4>
+                                <h4 class="shiny-silver">
                                     Jane Smith
                                 </h4>
-                                <span>
+                                <span class="gold-text">
                                     Marketing Director
                                 </span>
                             </div>
                         </div>
                     </div>
 
-                    <div class="swiper-slide mt-3">
+                    <div class="swiper-slide mt-3 hover-gold">
                         <div class="slide-img">
-                            <img src="./assets/images/people-3.jpeg" alt="People">
+                            <img src="./assets/images/people-3.jpeg" alt="Mike Johnson">
                         </div>
                         <div class="people-info">
                             <div class="info-icon">
-                                <i class="fa-solid fa-quote-left"></i>
+                                <i class="fa-solid fa-quote-left gold-text"></i>
                             </div>
-                            <p>
+                            <p class="silver-text">
                                 "A true professional who delivers high-quality work consistently. Highly recommended!
                                 Looking forward to working together on future projects."
                             </p>
                             <div class="about-person">
-                                <h4>
+                                <h4 class="shiny-gold">
                                     Mike Johnson
                                 </h4>
-                                <span>
+                                <span class="silver-text">
                                     Project Manager
                                 </span>
                             </div>
@@ -564,52 +575,53 @@
         </div>
     </section>
 
-    <section class="contact-page">
+    <!-- Contact Section -->
+    <section id="contact" class="contact-page">
         <div class="container">
-            <div class="sec-head text-center text-uppercase glow-text position-relative">
-                <span class="rounded-pill d-inline-block">
-                    Get In Touch
+            <div class="sec-head text-center text-uppercase position-relative">
+                <span class="rounded-pill d-inline-block shiny-silver">
+                    <i class="fas fa-envelope me-2"></i>Get In Touch
                 </span>
-                <h2 class="">
+                <h2 class="shiny-gold">
                     Contact Me
                 </h2>
-                <div class="head-line "></div>
+                <div class="head-line"></div>
             </div>
             <div class="row">
                 <div class="col-lg-4 mb-4 mb-lg-0">
                     <div class="contact-info d-flex flex-column gap-4">
-                        <div class="contact-card">
+                        <div class="contact-card hover-gold">
                             <div class="contact-icon">
                                 <i class="fa-solid fa-location-dot"></i>
                             </div>
-                            <h3>
+                            <h3 class="gold-text">
                                 Location
                             </h3>
-                            <p>
+                            <p class="silver-text">
                                 Surat, Gujarat, IND
                             </p>
                         </div>
 
-                        <div class="contact-card">
+                        <div class="contact-card hover-silver">
                             <div class="contact-icon">
                                 <i class="fa-solid fa-envelope"></i>
                             </div>
-                            <h3>
+                            <h3 class="silver-text">
                                 Email
                             </h3>
-                            <p>
+                            <p class="gold-text">
                                 dev.vivekgautam@gmail.com
                             </p>
                         </div>
 
-                        <div class="contact-card">
+                        <div class="contact-card hover-gold">
                             <div class="contact-icon">
                                 <i class="fa-solid fa-phone"></i>
                             </div>
-                            <h3>
+                            <h3 class="gold-text">
                                 Phone
                             </h3>
-                            <p>
+                            <p class="silver-text">
                                 +91 77789 68214
                             </p>
                         </div>
@@ -618,32 +630,32 @@
 
                 <div class="col-lg-8">
                     <div class="contact-form">
-                        <form action="php/contact.php" method="post">
+                        <form action="php/contact.php" method="post" id="contactForm">
                             <div class="row">
                                 <div class="col-md-6 mb-3">
-                                    <input type="text" name="name" class="form-control" placeholder="Your Name"
-                                        required>
+                                    <input type="text" name="name" class="form-control hover-gold"
+                                        placeholder="Your Name" required>
                                 </div>
 
                                 <div class="col-md-6 mb-3">
-                                    <input type="text" name="email" class="form-control" placeholder="Your Email"
-                                        required>
+                                    <input type="email" name="email" class="form-control hover-silver"
+                                        placeholder="Your Email" required>
                                 </div>
 
                                 <div class="col-12 mb-3">
-                                    <input type="text" name="subject" class="form-control" placeholder="Subject"
-                                        required>
+                                    <input type="text" name="subject" class="form-control hover-gold"
+                                        placeholder="Subject" required>
                                 </div>
 
                                 <div class="col-12 mb-3">
-                                    <textarea name="message" class="form-control" placeholder="Your Message" rows="5"
-                                        required></textarea>
+                                    <textarea name="message" class="form-control hover-silver"
+                                        placeholder="Your Message" rows="5" required></textarea>
                                 </div>
 
                                 <div class="col-12">
                                     <button type="submit"
-                                        class="submit-btn w-100 d-flex justify-content-center align-items-center">
-                                        Send Message
+                                        class="submit-btn w-100 d-flex justify-content-center align-items-center hover-gold">
+                                        <i class="fas fa-paper-plane me-2"></i>Send Message
                                     </button>
                                 </div>
                             </div>
@@ -655,29 +667,30 @@
         </div>
     </section>
 
+    <!-- Footer -->
     <footer>
         <div class="container">
             <div class="row">
                 <div class="col-lg-3 col-md-6">
                     <div class="footer-content mb-2">
                         <h3>
-                            Portfolium
+                            <i class="fas fa-gem me-2"></i>Portfolium
                         </h3>
-                        <p>
+                        <p class="silver-text">
                             Crafting digital experiences with passion and precision. Let's create something amazing
                             together.
                         </p>
                         <div class="foot-media d-flex justify-content-center align-items-center gap-3 text-center">
-                            <a href="" class="social-link">
+                            <a href="#" class="social-link hover-gold">
                                 <i class="fab fa-github"></i>
                             </a>
-                            <a href="" class="social-link">
+                            <a href="#" class="social-link hover-silver">
                                 <i class="fab fa-linkedin"></i>
                             </a>
-                            <a href="" class="social-link">
+                            <a href="#" class="social-link hover-gold">
                                 <i class="fab fa-x"></i>
                             </a>
-                            <a href="" class="social-link">
+                            <a href="#" class="social-link hover-silver">
                                 <i class="fab fa-instagram"></i>
                             </a>
                         </div>
@@ -686,24 +699,24 @@
 
                 <div class="col-lg-3 col-md-6">
                     <div class="footer-content">
-                        <h4>
-                            Quick Links
+                        <h4 class="gold-text">
+                            <i class="fas fa-link me-2"></i>Quick Links
                         </h4>
                         <ul>
-                            <li>
-                                Home
+                            <li class="">
+                                <i class="fas fa-chevron-right me-2"></i>Home
                             </li>
-                            <li>
-                                Services
+                            <li class="">
+                                <i class="fas fa-chevron-right me-2"></i>Services
                             </li>
-                            <li>
-                                Projects
+                            <li class="">
+                                <i class="fas fa-chevron-right me-2"></i>Projects
                             </li>
-                            <li>
-                                About
+                            <li class="">
+                                <i class="fas fa-chevron-right me-2"></i>About
                             </li>
-                            <li>
-                                Contact
+                            <li class="">
+                                <i class="fas fa-chevron-right me-2"></i>Contact
                             </li>
                         </ul>
                     </div>
@@ -711,21 +724,21 @@
 
                 <div class="col-lg-3 col-md-6">
                     <div class="footer-content">
-                        <h4>
-                            Services
+                        <h4 class="silver-text">
+                            <i class="fas fa-cogs me-2"></i>Services
                         </h4>
                         <ul>
-                            <li>
-                                Web Design
+                            <li class="">
+                                <i class="fas fa-desktop me-2"></i>Web Design
                             </li>
-                            <li>
-                                App Design
+                            <li class="">
+                                <i class="fas fa-mobile-alt me-2"></i>App Design
                             </li>
-                            <li>
-                                Dashboard Design
+                            <li class="">
+                                <i class="fas fa-chart-line me-2"></i>Dashboard Design
                             </li>
-                            <li>
-                                Ui/UX Design
+                            <li class="">
+                                <i class="fas fa-palette me-2"></i>Ui/UX Design
                             </li>
                         </ul>
                     </div>
@@ -733,53 +746,59 @@
 
                 <div class="col-lg-3 col-md-6">
                     <div class="footer-content">
-                        <h4>
-                            Contact Info
+                        <h4 class="gold-text">
+                            <i class="fas fa-address-card me-2"></i>Contact Info
                         </h4>
                         <ul>
-                            <li>
-                                dev.vivekgautam@gmail.com
+                            <li class="">
+                                <i class="fas fa-envelope me-2"></i>dev.vivekgautam@gmail.com
                             </li>
-                            <li>
-                                +91 77789 68214
+                            <li class="">
+                                <i class="fas fa-phone me-2"></i>+91 77789 68214
                             </li>
-                            <li>
-                                Red & White Skill Education
+                            <li class="">
+                                <i class="fas fa-map-marker-alt me-2"></i>Red & White Skill Education
                             </li>
                         </ul>
                     </div>
                 </div>
             </div>
-            <div class="footer-bottem d-flex text-center justify-content-center align-items-center">
-                <p class="m-0">
+            <div class="footer-bottem d-flex text-center justify-content-center align-items-center flex-wrap">
+                <p class="m-0 silver-text">
                     © 2025 Portfolium. All rights reserved. | Designed with
-                    <i class="fas fa-heart"></i>
+                    <i class="fas fa-heart gold-text mx-1"></i>
                     by
                 </p>
-                <a href="" class="text-decoration-none ms-1">Vivek Gautam</a>
+                <a href="#" class="gold-text text-decoration-none ms-1 fw-bold">Vivek Gautam</a>
             </div>
         </div>
     </footer>
 
+    <!-- Scroll to Top -->
     <div class="scroll-top">
-        <button>
-            <i class="fas fa-arrow-up">
-                <link rel="stylesheet" href="navbar">
-            </i>
-        </button>
+        <a href="#top">
+            <button class="hover-gold">
+                <i class="fas fa-arrow-up"></i>
+            </button>
+        </a>
     </div>
 
     <!-- Bootstrap Script -->
     <script src="./assets/js/bootstrap.bundle.min.js"></script>
 
-    <!-- Swiper  JS CDN-->
+    <!-- Swiper JS CDN -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
     <script>
+        // Initialize Swiper
         var swiper = new Swiper(".mySwiper", {
             slidesPerView: 1,
-            slidesPerGroup: 3,
             spaceBetween: 30,
+            loop: true,
+            autoplay: {
+                delay: 5000,
+                disableOnInteraction: false,
+            },
             pagination: {
                 el: ".swiper-pagination",
                 clickable: true,
@@ -793,6 +812,121 @@
                 768: { slidesPerView: 2 },
                 992: { slidesPerView: 3 }
             }
+        });
+
+        // Form submission handler
+        document.getElementById('contactForm').addEventListener('submit', function (e) {
+            e.preventDefault();
+
+            // Show success message
+            const formMessage = document.querySelector('.form-message');
+            formMessage.innerHTML = `
+                <div class="alert alert-success d-flex align-items-center" role="alert">
+                    <i class="fas fa-check-circle me-2"></i>
+                    <div>
+                        Message sent successfully! I'll get back to you soon.
+                    </div>
+                </div>
+            `;
+            formMessage.style.opacity = '1';
+
+            // Reset form
+            setTimeout(() => {
+                this.reset();
+            }, 3000);
+
+            // Hide message after 5 seconds
+            setTimeout(() => {
+                formMessage.style.opacity = '0';
+                setTimeout(() => {
+                    formMessage.innerHTML = '';
+                }, 300);
+            }, 5000);
+        });
+
+        // Project filter buttons
+        document.querySelectorAll('.project-sec button').forEach(button => {
+            button.addEventListener('click', function () {
+                // Remove active class from all buttons
+                document.querySelectorAll('.project-sec button').forEach(btn => {
+                    btn.classList.remove('active-project');
+                    btn.style.background = 'transparent';
+                });
+
+                // Add active class to clicked button
+                this.classList.add('active-project');
+                this.style.background = 'linear-gradient(45deg, rgba(255,215,0,0.1), rgba(192,192,192,0.1))';
+            });
+        });
+
+        // Initialize first project button as active
+        document.querySelector('.project-sec button').classList.add('active-project');
+        document.querySelector('.project-sec button').style.background = 'linear-gradient(45deg, rgba(255,215,0,0.1), rgba(192,192,192,0.1))';
+
+        // Smooth scroll for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                const targetId = this.getAttribute('href');
+                if (targetId === '#') return;
+
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+
+        document.getElementById('contactForm').addEventListener('submit', function (e) {
+            e.preventDefault();
+
+            // Get form data
+            const name = document.querySelector('input[name="name"]').value;
+            const email = document.querySelector('input[name="email"]').value;
+            const subject = document.querySelector('input[name="subject"]').value;
+            const message = document.querySelector('textarea[name="message"]').value;
+
+            // Show alert message
+            alert("Thank you, " + name + "! Your message has been sent.\n\nI'll reply to: " + email);
+
+            // Also show styled message on page
+            const formMessage = document.querySelector('.form-message');
+            formMessage.innerHTML = `
+        <div class="alert alert-success d-flex align-items-center" role="alert" style="
+            background: linear-gradient(135deg, rgba(255,215,0,0.1), rgba(192,192,192,0.1));
+            border: 1px solid rgba(255,215,0,0.3);
+            color: #B8860B;
+        ">
+            <i class="fas fa-check-circle me-2" style="color: #FFD700;"></i>
+            <div>
+                <strong>Message sent successfully!</strong><br>
+                Thank you ${name}, I'll reply to ${email} within 24 hours.
+            </div>
+        </div>
+    `;
+            formMessage.style.opacity = '1';
+
+            // Log to console for testing
+            console.log("=== FORM SUBMISSION ===");
+            console.log("From:", name);
+            console.log("Email:", email);
+            console.log("Subject:", subject);
+            console.log("Message:", message);
+
+            // Reset form
+            this.reset();
+
+            // Hide message after 8 seconds
+            setTimeout(() => {
+                formMessage.style.opacity = '0';
+                setTimeout(() => {
+                    formMessage.innerHTML = '';
+                }, 300);
+            }, 8000);
         });
     </script>
 </body>

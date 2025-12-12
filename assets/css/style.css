@@ -458,6 +458,10 @@ section {
     transition: all 0.2s linear;
 }
 
+.sec-head button{
+    transition: all 0.4s linear;
+}
+
 .sec-head h2:hover {
     transform: scale(1.1) !important;
     cursor: pointer;

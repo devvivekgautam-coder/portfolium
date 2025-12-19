@@ -3,7 +3,7 @@ body {
 }
 
 section {
-    padding: 100px 0 !important;
+    padding: 50px 0 !important;
 }
 
 :root {
@@ -458,7 +458,7 @@ section {
     transition: all 0.2s linear;
 }
 
-.sec-head button{
+.sec-head button {
     transition: all 0.4s linear;
 }
 
@@ -879,6 +879,10 @@ textarea.form-control {
 .scroll-top button {
     background-color: transparent;
     border: none;
+}
+
+.animate-top {  
+    transform: translateY(0) !important;
 }
 
 .scroll-top button i {

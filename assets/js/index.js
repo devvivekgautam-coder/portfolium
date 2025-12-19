@@ -19,79 +19,23 @@ var swiper = new Swiper(".mySwiper", {
     }
 });
 
-// ===============================
-// Contact Form Submission (Frontend)
-// ===============================
-document.getElementById('contactForm').addEventListener('submit', function (e) {
-    e.preventDefault();
+// ========================
+// Scroll Smooth
+// ========================
 
-    const form = this;
-    const formMessage = document.querySelector('.form-message');
-
-    const formData = new FormData(form);
-
-    fetch(form.action, {
-        method: 'POST',
-        body: formData
-    })
-    .then(response => response.text())
-    .then(data => {
-        formMessage.innerHTML = `
-            <div class="alert alert-success d-flex align-items-center" role="alert">
-                <i class="fas fa-check-circle me-2"></i>
-                <div>
-                    Message sent successfully! I'll get back to you soon.
-                </div>
-            </div>
-        `;
-        formMessage.style.opacity = '1';
-        form.reset();
-
-        setTimeout(() => {
-            formMessage.style.opacity = '0';
-            setTimeout(() => formMessage.innerHTML = '', 300);
-        }, 6000);
-    })
-    .catch(() => {
-        formMessage.innerHTML = `
-            <div class="alert alert-danger">Something went wrong. Please try again.</div>
-        `;
+const topBtn = document.getElementById("topBtn");
+topBtn.addEventListener("click", () => {
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth"
     });
-});
-
-// ===============================
-// Project Filter Button UI
-// ===============================
-document.querySelectorAll('.project-sec button').forEach(button => {
-    button.addEventListener('click', function () {
-        document.querySelectorAll('.project-sec button').forEach(btn => {
-            btn.classList.remove('active-project');
-            btn.style.background = 'transparent';
-        });
-
-        this.classList.add('active-project');
-        this.style.background = 'linear-gradient(45deg, rgba(255,215,0,0.1), rgba(192,192,192,0.1))';
-    });
-});
-
-// Set default active button
-document.querySelector('.project-sec button')?.classList.add('active-project');
-
-// ===============================
-// Smooth Scroll
-// ===============================
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
-        const targetId = this.getAttribute('href');
-        if (targetId === '#') return;
-        e.preventDefault();
-
-        const target = document.querySelector(targetId);
-        if (target) {
-            window.scrollTo({
-                top: target.offsetTop - 80,
-                behavior: 'smooth'
-            });
-        }
-    });
+})
+window.addEventListener("scroll", () => {
+    if (window.scrollY > 200) {
+        topBtn.classList.remove("opacity-0");
+        topBtn.classList.add("animate-top")
+    } else {
+        topBtn.classList.add("opacity-0");
+        topBtn.classList.remove("animate-top")
+    }
 });

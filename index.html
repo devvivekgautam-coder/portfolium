@@ -25,12 +25,12 @@
 
 </head>
 
-<body>
+<body class="overflow-x-hidden">
     <div class="theme-preview d-none d-md-block">
         <i class="fas fa-gem me-2"></i>Gold & Silver Theme Active
     </div>
 
-    <nav id="top" class="navbar navbar-expand-lg position-sticky top-0">
+    <nav class="navbar navbar-expand-lg position-sticky top-0">
         <div class="container d-flex justify-content-evenly align-items-center">
             <a class="navbar-brand" href="./index.html" target="_blank">
                 <i class="fas fa-gem me-2"></i>Portfolium
@@ -630,7 +630,7 @@
                 </div>
 
                 <div class="col-lg-8">
-                    <div class="contact-form">
+                    <div class="contact-form d-flex align-items-center h-100">
                         <form action="./assets/php/contact.php" method="post" id="contactForm">
                             <div class="row">
                                 <div class="col-md-6 mb-3">
@@ -682,17 +682,24 @@
                             together.
                         </p>
                         <div class="foot-media d-flex justify-content-center align-items-center gap-3 text-center">
-                            <a href="#" class="social-link hover-gold">
+                            <a href="https://github.com/devvivekgautam-coder" class="social-link hover-gold"
+                                target="_blank">
                                 <i class="fab fa-github"></i>
                             </a>
-                            <a href="#" class="social-link hover-silver">
+                            <a href="https://www.linkedin.com/in/vivek-gautam-2737a7367/"
+                                class="social-link hover-silver" target="_blank">
                                 <i class="fab fa-linkedin"></i>
                             </a>
-                            <a href="#" class="social-link hover-gold">
+                            <a href="https://x.com/mr__india__3207" class="social-link hover-gold" target="_blank">
                                 <i class="fab fa-x"></i>
                             </a>
-                            <a href="#" class="social-link hover-silver">
+                            <a href="https://www.instagram.com/mr__india__3207/" class="social-link hover-silver"
+                                target="_blank">
                                 <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="https://www.facebook.com/profile.php?id=100073330809039"
+                                class="social-link hover-gold" target="_blank">
+                                <i class="fa-brands fa-facebook"></i>
                             </a>
                         </div>
                     </div>
@@ -776,12 +783,10 @@
     </footer>
 
     <!-- Scroll to Top -->
-    <div class="scroll-top">
-        <a href="#top">
-            <button class="hover-gold">
-                <i class="fas fa-arrow-up"></i>
-            </button>
-        </a>
+    <div class="scroll-top opacity-0" id="topBtn">
+        <button class="hover-gold">
+            <i class="fas fa-arrow-up"></i>
+        </button>
     </div>
 
     <!-- Bootstrap Script -->

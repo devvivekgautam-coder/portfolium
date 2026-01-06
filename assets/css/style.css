@@ -296,7 +296,6 @@ section {
 .download-cv {
     display: inline-flex;
     align-items: center;
-    gap: 8px;
     background: transparent;
     color: var(--primary-silver);
     border: 2px solid var(--primary-silver);
@@ -954,4 +953,39 @@ body {
     100% {
         opacity: 1;
     }
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding-left: 20px !important;
+        padding-right: 20px !important;
+    }
+
+    section {
+        padding: 30px 0 !important;
+    }
+
+    .row {
+        margin-left: -10px !important;
+        margin-right: -10px !important;
+    }
+
+    .col-lg-6,
+    .col-lg-4,
+    .col-lg-3,
+    .col-md-6,
+    .col-md-4 {
+        padding-left: 10px !important;
+        padding-right: 10px !important;
+    }
+}
+
+img {
+    max-width: 100% !important;
+    height: auto !important;
+}
+
+h1, h2, h3, h4, h5, h6, p, span, li, a {
+    word-wrap: break-word !important;
+    overflow-wrap: break-word !important;
 }
